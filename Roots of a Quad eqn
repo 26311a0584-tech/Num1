@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float a,b,c;
+    float d, ip, rp, r1, r2;
+    
+    scanf("%f %f %f", &a, &b, &c);
+    d = b*b - 4*a*c;
+    
+    if(d == 0){
+        
+     r1 = -b/2*a;
+     printf("Root1 = Root2 = %.2f",r1);
+    }
+    
+    else if(d>=0){
+        r1 = (-b + sqrt(d))/(2*a);
+        r2 = (-b - sqrt(d))/(2*a);
+        printf("Root1 = %.2f\n", r1);
+        printf("Root2 = %.2f\n", r2);
+        
+    }
+    else{
+        rp = -b/(2*a);
+        ip = (sqrt(-d))/(2*a);
+        printf("Root1 = %.2f + i%.2f\n",rp, ip);
+        printf("Root2 = %.2f - i%.2f\n",rp, ip);
+    }
+    return 0;
+    
+    
+    
+
+
+}
