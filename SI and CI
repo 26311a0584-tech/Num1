@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double P, R, T;
+    
+    
+    scanf("%lf %lf %lf",&P, &R, &T);
+    
+    
+    double SI = (P*R*T)/100.0;
+    double CI = P*pow(1+(R/100.0), T) - P;
+    
+    
+    
+    printf("%.2f %.2f", SI, CI);
+    
+    
+    return 0;
+    
+}
