@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main() {
+    int A, B, C;
+    int max, min;
+    
+    scanf("%d %d %d", &A, &B, &C);
+    
+    if (A>B && A>C){
+        max = A;
+    }
+    else if (B>C && B>C){
+        
+        max = B;
+        
+    }
+    else{
+        
+        max = C;
+    }
+    
+    if(A<B && A<C){
+        min = A;
+    }
+    else if(B<A && B<C){
+        min = B; 
+    
+    }
+    else{
+        min= C;
+    }
+    
+   
+        
+
+    
+       printf("%d \n%d", max, min);
+       
+    
+    return 0;
+    
+    
+}
