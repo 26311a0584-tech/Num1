@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float a,s,t;
+    scanf("%f",&a);
+    
+    for(int floor = 1; floor<=10; floor++){
+        s = 3.0 * floor;
+        t = sqrt((2.0*s)/a);
+        printf("%.3f\n",t);
+    }
+    
+    
+    return 0;
+    
+}
