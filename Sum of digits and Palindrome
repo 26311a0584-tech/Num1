@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    
+    int n,r;
+    int sum=0, rev = 0;
+    
+    scanf("%d", &n);
+    
+    int origN = n;
+    while(n>0){
+        r = n % 10;
+        sum = sum + r;
+        rev = (rev*10)+r;
+        n = n/10;
+    }
+    printf("%d\n",sum);
+    
+    if(origN == rev){
+        printf("PALINDROME\n");
+    }
+    
+    else{
+        printf("NOT PALINDROME\n");
+    }
+    return 0;
+
+   
+   
+}
