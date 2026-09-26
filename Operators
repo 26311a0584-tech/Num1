@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int A, B;
+
+    scanf("%d %d", & A, & B);
+    
+    int or_B = B;
+
+    printf("\n%d", ++A);
+    printf("\n%d", B++);
+    printf("\n%d", A & or_B);
+    printf("\n%d", A | B);
+    printf("\n%d", A ^ B);
+
+return 0;
+}
